@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.math.BigInteger;
+public class factorial {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int i=0;
+        BigInteger fact=BigInteger.ONE;
+        if(num>0)
+        {
+            for(i=1;i<=num;i++)
+        {
+            fact=fact.multiply(BigInteger.valueOf(i));
+        
+        }
+        System.out.println(fact);
+        }
+        else
+        {
+            System.out.println("Not Defined");
+        }
+        
+        
+    sc.close();
+}
+    
+}
